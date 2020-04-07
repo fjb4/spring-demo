@@ -1,0 +1,9 @@
+
+#JPA properties
+spring:
+  datasource:
+    platform: mysql
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
