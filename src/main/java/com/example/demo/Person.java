@@ -8,16 +8,16 @@ import javax.persistence.Id;
 
 @Entity
 public class Person {
-	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
-	private Long personId;
-	
-	@Column(nullable=false)
-	private String firstName;
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long personId;
 
-    @Column(nullable=false)
+    @Column(nullable = false)
+    private String firstName;
+
+    @Column(nullable = false)
     private String lastName;
-    
+
     public Long getPersonId() {
         return personId;
     }
